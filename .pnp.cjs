@@ -96,6 +96,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./packages/blog/",\
           "packageDependencies": [\
             ["@hojjat-dev/blog", "workspace:packages/blog"],\
+            ["@hojjat-dev/components", "workspace:packages/components"],\
             ["@types/node", "npm:18.7.18"],\
             ["@types/react", "npm:18.0.20"],\
             ["@types/react-dom", "npm:18.0.6"],\

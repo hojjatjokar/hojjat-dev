@@ -45,6 +45,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@hojjat-dev/blog@workspace:packages/blog"
   dependencies:
+    "@hojjat-dev/components": 0.0.1
     "@types/node": 18.7.18
     "@types/react": 18.0.20
     "@types/react-dom": 18.0.6
@@ -57,7 +58,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@hojjat-dev/components@workspace:packages/components":
+"@hojjat-dev/components@0.0.1, @hojjat-dev/components@workspace:packages/components":
   version: 0.0.0-use.local
   resolution: "@hojjat-dev/components@workspace:packages/components"
   languageName: unknown

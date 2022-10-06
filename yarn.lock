@@ -233,7 +233,7 @@ __metadata:
     "@types/node": 18.7.18
     "@types/react": 18.0.20
     "@types/react-dom": 18.0.6
-    "@types/styled-components": ^5.1.26
+    "@types/styled-components": 5.1.26
     babel-plugin-styled-components: 2.0.7
     eslint: 8.23.1
     eslint-config-next: 12.3.0
@@ -250,6 +250,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@hojjat-dev/components@workspace:packages/components"
   dependencies:
+    "@types/react": ^18.0.21
+    react: 18.2.0
+    styled-components: 5.3.6
     ts-loader: 9.4.1
     typescript: 4.8.4
     webpack: 5.74.0
@@ -589,6 +592,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/react@npm:^18.0.21":
+  version: 18.0.21
+  resolution: "@types/react@npm:18.0.21"
+  dependencies:
+    "@types/prop-types": "*"
+    "@types/scheduler": "*"
+    csstype: ^3.0.2
+  checksum: 36c1a7c9d507e81e2e629c1ad3db51d7b84d8b010c2d5008da411874286c6a5ccc711ae1d4c470efc0bdc77153cc8804a40e927e929e5164c669ca41b84b846d
+  languageName: node
+  linkType: hard
+
 "@types/scheduler@npm:*":
   version: 0.16.2
   resolution: "@types/scheduler@npm:0.16.2"
@@ -596,7 +610,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/styled-components@npm:^5.1.26":
+"@types/styled-components@npm:5.1.26":
   version: 5.1.26
   resolution: "@types/styled-components@npm:5.1.26"
   dependencies:

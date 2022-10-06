@@ -1,7 +1,7 @@
-import { sum } from './components/index'
+import { Box } from './components'
 
 console.log('hello')
 
 export {
-  sum
+  Box
 } 

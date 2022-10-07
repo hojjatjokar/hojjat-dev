@@ -1,7 +1,6 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import styled from 'styled-components';
-import { Box }  from '@hojjat-dev/components';
 
 const Header = styled.h1`
   font-size: 68px;
@@ -19,7 +18,6 @@ const Home: NextPage = () => {
       <Header>
           Welcome
       </Header>
-      <Box>hojjat</Box>
     </div>
   )
 }

@@ -1,6 +1,4 @@
-import { Box } from './components'
-
-console.log('hello')
+import { Box } from './atoms/Box';
 
 export {
   Box

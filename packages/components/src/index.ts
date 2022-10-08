@@ -1,7 +1,5 @@
-import { sum } from './components/index'
-
-console.log('hello')
+import { Box } from './atoms/Box';
 
 export {
-  sum
+  Box
 } 

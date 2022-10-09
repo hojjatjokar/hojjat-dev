@@ -1,1 +1,0 @@
-declare module '@hojjat-dev/components';

@@ -1,5 +1,7 @@
 {
   "recommendations": [
-    "arcanis.vscode-zipfs"
+    "arcanis.vscode-zipfs",
+    "firsttris.vscode-jest-runner",
+    "dbaeumer.vscode-eslint"
   ]
 }

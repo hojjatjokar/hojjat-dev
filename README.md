@@ -1,6 +1,4 @@
-
-
-# HojjatDev
+# Hojjat-Dev
 
 ## Apps and Libs in this project
 
@@ -9,29 +7,32 @@
 - [app] storybook-e2e
 - [lib] components
 
-## Development server
+## Scripts
 
-Run `nx serve blog` for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
+### Blog
+
+- Run development: `nx serv blog` this will run the blog in this address: http://localhost:4200/
+- Execute all unit tests: `nx test blog`
+- Run unit tests affected by a change: `nx affected:test`
+- Lint: `nx lint blog`
+- Build: `nx build blog`. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+
+### Blog E2E
+
+- Run E2E tests: `nx e2e blog-e2e`
+- Run e2e tests affected ny a change: `nx affected:e2e`
+- Lint: `nx lint blog-e2e`
+
+### Components
+
+- lint: `nx lint components`
+- test: `nx test components`
+- storybook: `nx storybook components`
+- build-storybook:`nx build-storybook components`
 
 ## Code scaffolding
 
 Run `nx g @nrwl/react:component my-component --project=blog` to generate a new component.
-
-## Running unit tests
-
-Run `nx test my-app` to execute the unit tests via [Jest](https://jestjs.io).
-
-Run `nx affected:test` to execute the unit tests affected by a change.
-
-## Running end-to-end tests
-
-Run `nx e2e my-app` to execute the end-to-end tests via [Cypress](https://www.cypress.io).
-
-Run `nx affected:e2e` to execute the end-to-end tests affected by a change.
-
-## Build
-
-Run `nx build blog` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
 ## Generate new packages
 

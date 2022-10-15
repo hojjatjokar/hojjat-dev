@@ -1,26 +1,18 @@
 import React from 'react';
-import styled from 'styled-components';
+// import styled from 'styled-components';
 
-/* eslint-disable-next-line */
-export interface ButtonProps {
-  children: React.ReactNode
+type ButtonProps = {
+  label: string;
 }
 
-const StyledButton = styled.div`
-  color: pink;
-`;
-
-
-export function Button({children}: ButtonProps) {
+export function Button({ label }: ButtonProps) {
+  // return null
   return (
-    <StyledButton>
-      
-      <h1>Welcome to Button!</h1>
-      {children}
-      
-    </StyledButton>
+    <button>
+      {label}
+    </button>
   );
 };
 
 
-export default Button;
+export default Button ;

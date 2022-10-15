@@ -9,8 +9,10 @@ const Story: ComponentMeta<typeof Button> = {
 export default Story;
 
 
-const Template: ComponentStory< typeof Button > = (args) => <Button {...args}>Text</Button>;
+const Template: ComponentStory< typeof Button > = (args) => <Button {...args} />;
 
 export const Primary = Template.bind({})
-  Primary.args = {
+
+Primary.args = {
+  label: 'Button Text'
 }

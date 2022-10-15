@@ -23,7 +23,7 @@ export function Index() {
             </h1>
           </div>
 
-          <Button>Button</Button>
+          <Button label='Button' />
         </div>
       </div>
     </StyledPage>

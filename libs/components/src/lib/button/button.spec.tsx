@@ -1,8 +1,6 @@
 import { render } from '@testing-library/react';
 import Button from './button';
 
-// expect.extend(jestDOM);
-
 describe('Button', () => {
   it('should render successfully', () => {
     // Arrang: Setup the test data

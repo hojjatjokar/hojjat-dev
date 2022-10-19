@@ -26,10 +26,10 @@ describe('Button', () => {
 
     // Act: Call your method
     // BDD: when
-    const {getByText} = render(<Button label={fakeText} />);
+    const { getByText } = render(<Button label={fakeText} />);
 
     // Assert
     // BDD: then
-    expect(getByText(fakeText)).toBeInTheDocument();
+    expect(getByText(fakeText.toUpperCase())).toBeInTheDocument();
   })
 });

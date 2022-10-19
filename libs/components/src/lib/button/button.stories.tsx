@@ -33,6 +33,14 @@ const Template: ComponentStory< typeof Button > = (args) => (
 
 export const Primary = Template.bind({})
 
+export const PrimarySmall = Template.bind({})
+
+
 Primary.args = {
   label: 'Button Text'
+}
+
+PrimarySmall.args = {
+  label: 'Button Text',
+  size: 'small'
 }

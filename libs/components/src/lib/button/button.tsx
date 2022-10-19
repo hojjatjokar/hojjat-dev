@@ -1,11 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const StyledButton = styled.button`
+type Props = {
+  $size: 'small' | 'large';
+}
+
+const StyledButton = styled.button<Props>`
   border-radius: 8px;
   color: ${(props) => props.theme.secondaryColor};
   background-color: ${(props) => props.theme.primaryColor};
-  padding: ${(props) => props.theme['size-4']};
+  padding: ${(props) => props.$size ==='large' ? props.theme['size-4'] : props.theme['size-2']};
   font-size: ${(props) => props.theme.typeSizeBase};
   font-weight: bold;
   font-family: ${(props) => props.theme.fontFamily};
@@ -44,7 +48,7 @@ type ButtonProps = {
 export function Button({ label, disabled, size = 'large', type = 'primary', iconName, ...rest  }: ButtonProps) {
   console.log('rest', rest)
   return (
-    <StyledButton disabled={disabled}>
+    <StyledButton disabled={disabled} $size={size}>
       {label}
     </StyledButton>
   );
